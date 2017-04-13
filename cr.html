@@ -1,0 +1,101 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+var paswrd=document.getElementById("pwd").value;
+var rpaswrd=document.getElementById("pwdr").value;
+if(paswrd!=(rpaswrd))
+{
+alert("passwords do not match");
+return false;
+}
+return true;
+}
+</script>
+<style>
+h1.first
+{
+text-align:center;
+padding:30px;
+color:white;
+font-weight:bold;
+font-size:50px;
+font-family:Comic Sans MS, cursive, sans-serif;
+border-style:solid;
+background-color:#4B0082;
+margin-bottom:0px;
+}
+
+ul {
+    margin-left:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+     background-color:WHITE;
+}
+
+li {
+list-style-type:none;
+float: left;
+}
+
+li a {
+    font-size:20px;
+    color: #4B0082;
+font-family:Comic Sans MS, cursive, sans-serif;
+    text-align: center;
+    padding: 30px ;
+    text-decoration: none;
+	font-size:40px;
+	font-weight:bold;
+}
+li a:hover
+{
+padding-top:0px;
+background-color:#e1c1f0;
+padding-bottom:3px;
+}
+body
+{
+font-size:30px;
+font-family:Comic Sans MS, cursive, sans-serif;
+}
+</style>
+</head>
+<body>
+<h1 class="first">HOME DECOR 
+ <sub style="color:white; font-size:30px">--explore and make it yrs<sub></h1>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Login.html">Buy</a></li>
+  <li><a href="check.html">Sell</a></li>
+  <li><a href="register.html">Register</a></li>
+  <li><a href="cl.html">Confirm sale</a></li>
+
+</ul><br><br>
+<form action="crv.jsp" method="post" onsubmit="return (validate()) ">
+<fieldset style="border:3px solid black;margin-left:270px;width:60%;padding-left:50px;">
+<legend style="font-size:30px;font-family:Comic Sans MS, cursive, sans-serif;
+color:#4B0082">Registration details</legend>
+<br>
+Name    <input  style="font-family:Comic Sans MS, cursive, sans-serif;
+margin-left:200px;font-size:20px" size= 40 type="text" name="name" required><br><br>
+Email-id   <input  style="font-family:Comic Sans MS, cursive, sans-serif;
+margin-left:165px;font-size:20px" size=40 type="text" name="eid" pattern=".*@.*.[a-z A-Z]{3}" title="email id specfication check"
+ required><br><br>
+Phone Number    <input  style="font-family:Comic Sans MS, cursive, sans-serif;
+margin-left:75px;font-size:20px" size=40 type="text" name="phno" pattern="[0-9]{10}" title=" check specification of phone number"required><br><br>
+User name <input  style="font-family:Comic Sans MS, cursive, sans-serif;
+font-size:20px;margin-left:130px" size=40 maxlength=10 type="text" name="usn" required><br><br>
+Password<input  style="font-family:Comic Sans MS, cursive, sans-serif;
+font-size:20px;margin-left:160px" size=40 type="password" id="pwd" name="pwd" required><br><br>
+Re-enter password <input style="font-family:Comic Sans MS, cursive, sans-serif;
+font-size:20px;margin-left:20px" size=40 maxlength=15 type="password" id="pwdr" name="pwd2" required>
+
+<br><br>
+<input  style="background-color:white;border:solid 3px black;font-family:Comic Sans MS, cursive, sans-serif;font-size:30px;padding:10px;margin-left:350px;"
+type="submit" value="submit">
+</fieldset>
+</form>
+</body>
+</html>

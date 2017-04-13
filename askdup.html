@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+body
+{
+background-image:url("bg.jpg");
+font-size:30px;
+    font-family:Comic Sans MS, cursive, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1 style="
+text-align:center;
+padding:30px;
+color:white;
+font-weight:bold;
+font-size:50px;
+font-family:Comic Sans MS, cursive, sans-serif;
+border-style:solid;
+background-color:#4B0082;
+margin-bottom:0px;
+">Want to sell ??</h1>
+<fieldset style="margin-left:450px;margin-right:400px;margin-top:100px;padding-left:40px;border:4px solid black">
+<legend style="font-size:35px;color:#4B0082;font-weight:bold">Fill in the details</legend>
+<form  action="askcheck.jsp"   method="post"> 
+<br>Fill in unique caption<br><br>Cost<input style="font-size:20px;font-weight:bold;font-family:Comic Sans MS, cursive, sans-serif;margin-left:130px
+" type="text" pattern="[0-9]{3,10}" name="cost" required ><br><br>
+Caption<input style="font-size:20px;font-weight:bold;font-family:Comic Sans MS, cursive, sans-serif;margin-left:90px
+" type="text" maxlength=10  name="caption"required><br><br>
+Description<input style="font-size:20px;font-weight:bold;font-family:Comic Sans MS, cursive, sans-serif;margin-left:30px
+" type="text" name="descp" required><br><br>
+<input  style="background-color:white;border:solid 3px black;font-family:Comic Sans MS, cursive, sans-serif;font-size:30px;padding:10px;margin-left:490px;"
+type="submit" value="submit">
+</form>
+</fieldset>
+</body>
+</html>

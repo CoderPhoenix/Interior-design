@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+<title>homedecorsk</title>
+<style>
+.mySlides {display:none;}
+
+.mySlides2 {display:none;}
+
+.mySlides1 {display:none;}
+
+h1.first
+{
+text-align:center;
+padding:30px;
+color:white;
+font-weight:bold;
+font-size:50px;
+font-family:Comic Sans MS, cursive, sans-serif;
+border-style:solid;
+background-color:#4B0082;
+margin-bottom:0px;
+}
+body {
+color:white;
+    font-family:Comic Sans MS, cursive, sans-serif;
+    font-size: 20px;
+}
+
+div#content {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+div.article {
+    margin: 5px;
+    padding: 10px;
+     background-image:url("lbbg.jpg");
+}
+
+ul {
+    margin-left:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+     background-color:WHITE;
+}
+
+li {
+list-style-type:none;
+float: left;
+}
+
+li a {
+    font-size:20px;
+    color: #4B0082;
+font-family:Comic Sans MS, cursive, sans-serif;
+    text-align: center;
+    padding-left: 20px ;
+	padding-right:45px;
+    text-decoration: none;
+	font-size:40px;
+	font-weight:bold;
+}
+li a:hover
+{
+padding-top:0px;
+background-color:#e1c1f0;
+}
+div.container
+{
+border-style:solid;
+background-color:#4B0082;
+height:300px;
+}
+</style>
+</head>
+<body >
+
+<div id="header">
+<h1 class=first>HOME DECOR
+<sub style="color:white; font-size:30px">--explore and make it yrs<sub></h1>
+</div>
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Login.html">Buy</a></li>
+  <li><a href="check.html">Sell</a></li>
+  <li><a href="register.html">Register</a></li>
+  <li><a href="cl.html">Confirm sale</a></li>
+
+</ul><br><br>
+
+<div id="content">
+<h2 style=" font-family:Comic Sans MS, cursive, sans-serif">Kitchen Section</h2>
+<div class="article">
+<h2>L-Shaped Layout Kitchens</h2>
+  <p>This is one of the most commonly applied kitchen layouts and is ideal for smaller homes. It makes efficient use of minimum floor space and gives you the advantage of easily incorporating a small dining table within your kitchen.</p>
+  <img  src="lshaped.jpg" height=300px width=350px alt="img not found" style="margin-left:500px;border:5px solid black">
+  <p>This L-shaped Modular Kitchen layout is small, compact, discreet very versatile, providing maximum storage.</p>
+  <p>Following are the L-shaped modules</p>
+  <!--<button onClick="point()">View</button>-->
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-top" src="lshaped1.jpeg"style="width:500px; margin-left:450px;border:4px solid grey">
+  <img class="mySlides w3-animate-bottom" src="lshaped2.jpeg " style="width:500px ;margin-left:450px;border:4px solid grey">
+  <img class="mySlides w3-animate-top" src="lshaped3.jpeg  "  style="width:500px;margin-left:450px;border:4px solid grey">
+  <img class="mySlides w3-animate-bottom" src="lshaped4.jpeg"  style="width:500px;margin-left:450px;border:4px solid grey">
+  <img class="mySlides w3-animate-bottom" src="lshaped5.jpeg"  style="width:500px;margin-left:450px;border:4px solid grey">
+  <img class="mySlides w3-animate-bottom" src="lshaped6.jpeg"  style="width:500px;margin-left:450px;border:4px solid grey">
+</div>
+</div>
+<script>
+var myInd = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myInd++;
+    if (myInd > x.length) {myInd = 1}    
+    x[myInd-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+<div class="article">
+<h2>U-shaped Layout Kitchens</h2>
+  <p> The horseshoe, or U-shape, If your home has a large kitchen space or you are fond of cooking, the U-shaped kitchen layout is likely to suit you best. This layout has the most efficient work triangle and provides the most storage space as well, with plenty of wall and floor cabinets and more counter space too. This also makes it ideal for family homes. </p>
+  <img src="ushaped.jpg" height=300px width=350px alt="img not found" style="margin-left:500px;border:5px solid black">
+ <p> The U Shaped Modular Kitchen fits into longer spaces, affords much storage and countertop space and is very versatile.</p>
+ <p> Following are the U-shaped modules</p>
+
+<!--<button onClick="point1()">View</button> -->
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides1 w3-animate-left" src="us1.jpeg"style="width:500px; margin-left:430px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="us2.jpeg " style="width:500px ;margin-left:4300px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="us3.jpeg  "  style="width:500px;margin-left:430px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="us4.jpeg"  style="width:500px;margin-left:430px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="us5.jpeg"  style="width:500px;margin-left:430px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="us6.jpeg"  style="width:500px;margin-left:430px;border:4px solid grey">
+</div>
+</div>
+<script>
+var myIndex = 0;
+carousel1();
+
+function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel1, 2500);    
+}
+</script>
+<div class="article">
+<h2>Parallel or Galley  Layout Kitchens</h2>
+  <p> When it comes to cooking, the parallel kitchen is quite possibly the most efficient layout. With two, long working areas that face each other, it can be split into wet and dry work spaces. It provides plenty of counter space for appliances and maximizes storage as well. The parallel kitchen is suitable for most types of homes and is easily adaptable to your needs.</p>
+  <img src="parallel.jpg" height=300px width=350px alt="img not found" style="margin-left:500px;border:5px solid black">
+ <p>The Parallel Modular Kitchen is apt for longer rooms, lines two opposing walls, affords plenty of room for movement and provides ample storage.</p>
+ <p> Following are the Parallel Layout modules</p>
+
+<!--<button onClick="point1()">View</button> -->
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides2 w3-animate-left" src="ps1.jpg" alt="img"style="width:500px; margin-left:430px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="ps2.jpg " alt="img"style="width:500px ;margin-left:430px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="ps3.jpg  "  alt="img " style="width:500px;margin-left:430px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="ps4.jpg"  alt="img" style="width:500px;margin-left:430px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="ps5.jpg" alt="img" style="width:500px;margin-left:430px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="ps6.jpg"  alt="img" style="width:500px;margin-left:430px;border:4px solid grey">
+</div>
+</div>
+<script>
+var myIndex1 = 0;
+carousel2();
+
+function carousel2() {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex1++;
+    if (myIndex1 > x.length) {myIndex1 = 1}    
+    x[myIndex1-1].style.display = "block";  
+    setTimeout(carousel2, 2500);    
+}
+</script>
+</div>
+</body>
+</html>

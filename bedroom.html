@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+<title>homedecorsb</title>
+<style>
+.mySlides {display:none;}
+
+.mySlides2 {display:none;}
+
+.mySlides1 {display:none;}
+
+h1.first
+{
+text-align:center;
+padding:30px;
+color:white;
+font-weight:bold;
+font-size:50px;
+font-family:Comic Sans MS, cursive, sans-serif;
+border-style:solid;
+background-color:#4B0082;
+margin-bottom:0px;
+}
+body {
+color:white;
+    font-family:Comic Sans MS, cursive, sans-serif;
+    font-size: 20px;
+}
+
+div#content {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+div.article {
+    margin: 5px;
+    padding: 10px;
+    background-image:url("lbbg.jpg");
+}
+
+ul {
+    margin-left:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+     background-color:WHITE;
+}
+
+li {
+list-style-type:none;
+float: left;
+}
+
+li a {
+    font-size:20px;
+    color: #4B0082;
+font-family:Comic Sans MS, cursive, sans-serif;
+    text-align: center;
+    padding-left: 20px ;
+	padding-right:45px;
+    text-decoration: none;
+	font-size:40px;
+	font-weight:bold;
+}
+li a:hover
+{
+padding-top:0px;
+background-color:#e1c1f0;
+}
+div.container
+{
+border-style:solid;
+background-color:#4B0082;
+height:300px;
+}
+</style>
+</head>
+<body >
+
+<div id="header">
+<h1 class=first>HOME DECOR
+<sub style="color:white; font-size:30px">--explore and make it yrs<sub></h1>
+</div>
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Login.html">Buy</a></li>
+  <li><a href="check.html">Sell</a></li>
+  <li><a href="register.html">Register</a></li>
+  <li><a href="cl.html">Confirm sale</a></li>
+
+</ul><br><br>
+
+<div id="content">
+<h2 style=" font-family:Comic Sans MS, cursive, sans-serif">Bed Room Section</h2>
+<div class="article">
+<h2>Master Bedroom</h2>
+  
+  <img src="mbd1.jpg" height=300px width=350px alt="img not found" style="margin-left:500px;border:5px solid black">
+  <p>You can have a view of few more</p>
+ <!--<button onClick="point()">View</button>-->
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-top" src="mbd2.jpg"style="width:500px; margin-left:420px;height:500px;border:4px solid grey">
+  <img class="mySlides w3-animate-bottom" src="mbd3.jpg " style="width:500px ;margin-left:420px;height:500px;border:4px solid grey">
+  <img class="mySlides w3-animate-top" src="mbd4.jpg  "  style="width:500px;margin-left:420px;height:500px;border:4px solid grey">
+  <img class="mySlides w3-animate-bottom" src="mbd5.jfif"  style="width:500px;margin-left:420px;height:500px;border:4px solid grey">
+  <img class="mySlides w3-animate-bottom" src="mbd6.jpg"  style="width:500px;margin-left:420px;height:500px;border:4px solid grey">
+  <img class="mySlides w3-animate-bottom" src="mbd7.jpg"  style="width:500px;margin-left:420px;height:500px;border:4px solid grey">
+  
+</div>
+</div>
+<script>
+var myInd = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myInd++;
+    if (myInd > x.length) {myInd = 1}    
+    x[myInd-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+<div class="article">
+<h2>Kid's Bedroom</h2>
+  
+ <img src="kr1.jpg" height=300px width=350px alt="img not found" style="margin-left:500px;border:5px solid black">
+
+  
+ <p> You can have a view of few more </p>
+
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides1 w3-animate-left" src="kr2.jpg"style="width:500px; margin-left:410px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="kr3.jpg " style="width:500px ;margin-left:410px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="kr4.jpg  "  style="width:500px;margin-left:410px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="kr5.jpg"  style="width:500px;margin-left:410px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="kr6.jpg"  style="width:500px;margin-left:410px;border:4px solid grey">
+  <img class="mySlides1 w3-animate-left" src="kr7.jpg"  style="width:500px;margin-left:410px;border:4px solid grey">
+</div>
+</div>
+<script>
+var myIndex = 0;
+carousel1();
+
+function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel1, 2500);    
+}
+</script>
+<div class="article">
+<h2>Coastal Bedrooms</h2>
+  
+  <img src="csb1.jpg" height=300px width=350px alt="img not found" style="margin-left:500px;border:5px solid black">
+
+ 
+ <p> You can have a view of few more</p>
+
+<!--<button onClick="point1()">View</button> -->
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides2 w3-animate-left" src="csb2.jpg" alt="img"style="width:500px; margin-left:410px;height:500px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="csb3.jpg " alt="img"style="width:500px ;margin-left:410px;height:500px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="csb4.jpg  "  alt="img " style="width:500px;margin-left:410px;height:500px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="csb5.jpg"  alt="img" style="width:500px;margin-left:410px;height:500px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="csb6.jpg" alt="img" style="width:500px;margin-left:410px;height:500px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="csb7.jpg"  alt="img" style="width:500px;margin-left:410px;height:500px;border:4px solid grey">
+  <img class="mySlides2 w3-animate-left" src="csb8.jpg"  alt="img" style="width:500px;margin-left:410px;height:500px;border:4px solid grey">
+  
+</div>
+</div>
+<script>
+var myIndex1 = 0;
+carousel2();
+
+function carousel2() {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex1++;
+    if (myIndex1 > x.length) {myIndex1 = 1}    
+    x[myIndex1-1].style.display = "block";  
+    setTimeout(carousel2, 2500);    
+}
+</script>
+</div>
+</body>
+</html>
